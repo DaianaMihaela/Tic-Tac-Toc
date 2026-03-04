@@ -1,0 +1,205 @@
+/* Stiluri pentru tablă și pătrate */
+.game-board {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #DCDCDC;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 120px;
+  height: 120px;
+  background-color: #FAEBD7;
+  border: 3px solid #110404;
+  font-size: 36px; 
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+  margin: 20px;
+  font-weight: bold; 
+  transition: background-color 0.3s ease;
+  font-family: 'Permanent Marker', cursive; 
+}
+
+.square:hover {
+  background-color: #FFE4E1; 
+}
+
+.square.x {
+  color: red;
+}
+
+.square.o {
+  color: blue; 
+}
+
+.game-info {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+}
+
+.game-info ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+.game-info li button {
+  margin: 5px;
+  padding: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  flex-direction: column;
+}
+
+.moves-box {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background-color: #f3f3f3;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.moves-box h3 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.moves-box ol {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.moves-box li {
+  margin-bottom: 6px;
+}
+
+.moves-box button {
+  padding: 10px 15px;
+  font-size: 13px;
+  cursor: pointer;
+  background-color: #FFF5EE;
+  border: 3px solid #0a0a0a;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.moves-box button:hover {
+  background-color: #988787;
+}
+
+/* Stilizarea tabelului de scor */
+.scoreboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+  width: 150px; 
+}
+
+.scoreboard div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #110404;
+  background-color: #FFE4E1;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100px;
+  height: 50px; 
+  width: 50px; 
+  font-family: 'Permanent Marker', cursive;
+  transition: background-color 0.3s ease;
+}
+
+.scoreboard div:hover {
+  background-color: #e0e0e0;
+}
+
+.scoreboard .score {
+  font-size: 28px;
+}
+
+.scoreboard .player {
+  font-size: 36px;
+  color: red; 
+}
+
+.scoreboard .player.o {
+  color: blue;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+  margin-top: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(9, 40px); 
+  grid-template-rows: repeat(9, 40px);
+  gap: 2px;
+  margin: 0 auto;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.cell-initial {
+  background-color: #d1d5db;
+  font-weight: bold;
+}
+
+
+
